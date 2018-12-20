@@ -1,7 +1,8 @@
 *** Settings ***
-DOCUMENTATION     Praticing concepts: test suite for insert, update and delete data using API "FakeRestAPI.Web".
+DOCUMENTATION     Praticing concepts: test suite for insert, update
+...               and delete data using API "FakeRestAPI.Web".
 Resource          ../resource/keywords_FakerAPI.robot
-Suite Setup       Conect API
+Suite Setup       Connect API
 Suite Teardown    Disconnect API
 
 *** Test Case ***

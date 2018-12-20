@@ -1,13 +1,13 @@
 *** Settings ***
 DOCUMENTATION     Praticing concepts: test suite for consult resource using API "FakeRestAPI.Web".
 Resource          ../resource/keywords_FakerAPI.robot
-Suite Setup       Conect API
+Suite Setup       Connect API
 Suite Teardown    Disconnect API
 
 *** Test Case ***
 TestCase 01: Searching and Returning a specific book
     [Tags]                                       onebook
-    List a specifc book ID=                      29
+    List a specific book ID=                     29
     Check status code                            200
     Check reason                                 OK
 
