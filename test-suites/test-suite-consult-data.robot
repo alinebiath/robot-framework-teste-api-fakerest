@@ -1,10 +1,14 @@
 *** Settings ***
-DOCUMENTATION     Praticing concepts: test suite for consult resource using API "FakeRestAPI.Web".
-Resource          ../resource/keywords-faker-api.robot
+
+DOCUMENTATION     Praticing concepts: test suite for consult resource (books) using API "FakeRestAPI.Web".
+
+Resource          ../keywords/keywords-faker-api.robot
+
 Suite Setup       Connect API
 Suite Teardown    Disconnect API
 
 *** Test Case ***
+
 TestCase 01: Searching and Returning a specific book
     [Tags]                                       onebook
     List a specific book ID=                     29

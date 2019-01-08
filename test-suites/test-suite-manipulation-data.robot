@@ -1,11 +1,15 @@
 *** Settings ***
+
 DOCUMENTATION     Praticing concepts: test suite for insert, update
-...               and delete data using API "FakeRestAPI.Web".
-Resource          ../resource/keywords-faker-api.robot
+...               and delete books using API "FakeRestAPI.Web".
+
+Resource          ../keywords/keywords-faker-api.robot
+
 Suite Setup       Connect API
 Suite Teardown    Disconnect API
 
 *** Test Case ***
+
 TestCase 01: Recording a new book
     [Tags]                                         insert
     Record a new book

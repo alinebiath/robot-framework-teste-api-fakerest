@@ -1,7 +1,8 @@
 *** Settings ***
 
 DOCUMENTATION         Practicing concepts: keyword file implementing
-...                   tests cases to API "fakerestapi"
+...                   tests cases to API "fakerestapi".
+
 Library               Collections                                       WITH NAME        collection
 Library               RequestsLibrary                                   WITH NAME        request
 Library               BuiltIn                                           WITH NAME        std
@@ -11,8 +12,8 @@ Library               OperatingSystem                                   WITH NAM
 
 ${URL_API}=           https://fakerestapi.azurewebsites.net/api
 ${URI}=               Books
-${BODY_POST_PATH}=    ../resource/body-model-post.json
-${BODY_PUT_PATH}=     ../resource/body-model-put.json
+${BODY_POST_PATH}=    ./keywords/body-model-post.json
+${BODY_PUT_PATH}=     ./keywords/body-model-put.json
 &{HEADERS}=           content-type=application/json                     charset=utf-8
 
 *** Keywords ***
