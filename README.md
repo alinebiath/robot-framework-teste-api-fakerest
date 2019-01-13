@@ -1,4 +1,4 @@
-# robot-test-api-rest
+# Automating API Rest tests with Robot Framework.
 
 Small demonstration of a  project to automate API Rest tests using Robot Framework.
 
