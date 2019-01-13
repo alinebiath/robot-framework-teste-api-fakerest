@@ -6,4 +6,4 @@ Robot Framework is a Python-based, extensible keyword-driven test automation fra
 
 In this project I'm automating basic tests to access an API sever, executing the main requests like GET, POST, PUT and DELETE.
 To do this, I used RequestsLibrary and Collections library to access and read responses from API REST server.</br>
-API used as example: https://fakerestapi.azurewebsites.net/swagger/ui/index#/
+API used as example: https://fakerestapi.azurewebsites.net/swagger/ui/index#/. This API is public and not requires authentication.
