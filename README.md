@@ -31,7 +31,7 @@ $ robot -d output test-suites/test-suite-consult-data.robot
 ```sh
 $ robot -d output test-suites/test-suite-manipulation-data.robot
 ```
-<i>NOTE: For the PUT and POST methods two .JSON files were created to pass the body data, which can be changed as required.</i></br>
+<i>NOTE: For the PUT and POST methods two .JSON files were created to pass the body data, which can be changed as required.</i></br></br>
 
 ### Gererating documentation
 Generate reports of your scenarios or users keywords with Robot.
