@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 Linux / Mac
 $ sudo pip install -r requirements.txt
 ```
-This command will perform pip installation of what is required by the Robot Framework specified in the <i>requirements.txt file</i>.</br>
+This command will perform pip installation of what is required by the Robot Framework specified in the <i>requirements.txt file</i>.</br></br>
 
 ### Running Robot Framework tests
 Execute at the terminal the command below:
