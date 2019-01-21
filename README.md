@@ -23,11 +23,11 @@ This command will perform pip installation of what is required by the Robot Fram
 
 ### Running Robot Framework tests
 Execute at the terminal the command below:
-To the consult (GET) scenarios 
+- To the consult (GET) scenarios 
 ```sh
 $ robot -d output test-suites/test-suite-consult-data.robot
 ```
-To the manipulation (PUT, POST and DELETE) scenarios:
+- To the manipulation (PUT, POST and DELETE) scenarios:
 ```sh
 $ robot -d output test-suites/test-suite-manipulation-data.robot
 ```
