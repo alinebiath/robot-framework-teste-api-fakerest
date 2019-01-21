@@ -1,6 +1,6 @@
 # Automated tests for API Rest with Robot Framework
 
-- Tests applied to FakeRestAPI.Web, available at https://fakerestapi.azurewebsites.net/swagger/ui/index#/
+- Tests applied to FakeRestAPI.Web, available at: https://fakerestapi.azurewebsites.net/swagger/ui/index#/
 - It isn't necessary to register your application
 - The API doesn't require authentication
 
