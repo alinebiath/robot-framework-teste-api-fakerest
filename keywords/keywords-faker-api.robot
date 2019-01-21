@@ -20,7 +20,7 @@ ${BODY_PUT_PATH}=     ./keywords/body-model-put.json
 
 #Suite Setup and Teardown
 Connect API
-    request.Create Session                       fakerapi                                        ${URL_API}                       disable_warnings=0
+    request.Create Session                       fakerapi                                        ${URL_API}                       disable_warnings=1
 
 Disconnect API
     request.Delete All Sessions
