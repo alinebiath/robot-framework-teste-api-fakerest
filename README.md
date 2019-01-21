@@ -1,4 +1,4 @@
-# Automated tests for API Rest with Robot Framework
+# Automated tests for "FakeRestAPI.Web" API with Robot Framework
 
 - Tests applied to FakeRestAPI.Web, available at: https://fakerestapi.azurewebsites.net/swagger/ui/index#/
 - It isn't necessary to register your application
@@ -34,7 +34,7 @@ $ robot -d output test-suites/test-suite-manipulation-data.robot
 <i>NOTE: For the PUT and POST methods two .JSON files were created to pass the body data, which can be changed as required.</i>
 
 ### Gererating documentation
-- Generate reports of your scenarios or users keywords with Robot.
+Generate reports of your scenarios or users keywords with Robot.
 
 - The following command generates the documentation of the user keywords in the output directory (or another of your preference):
 ```sh
