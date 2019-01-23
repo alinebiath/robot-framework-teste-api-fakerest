@@ -6,7 +6,7 @@
 
 ### 1. Pre-conditions for the tests
 - Clone the project
-- Install Python 2.7.15
+- Python 2.7.15 installed
 - Use an ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br>
 
 ### 2. Installing required Python libraries
