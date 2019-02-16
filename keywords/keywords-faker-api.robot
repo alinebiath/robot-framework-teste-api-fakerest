@@ -12,8 +12,8 @@ Library               OperatingSystem                                   WITH NAM
 
 ${URL_API}=           https://fakerestapi.azurewebsites.net/api
 ${URI}=               Books
-${BODY_POST_PATH}=    ./keywords/body-model-post.json
-${BODY_PUT_PATH}=     ./keywords/body-model-put.json
+${BODY_POST_PATH}=    ./other_files/body-model-post.json
+${BODY_PUT_PATH}=     ./other_files/body-model-put.json
 &{HEADERS}=           content-type=application/json                     charset=utf-8
 
 *** Keywords ***
