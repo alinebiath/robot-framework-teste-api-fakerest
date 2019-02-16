@@ -5,6 +5,14 @@
 - It isn't necessary to register your application
 - The API doesn't require authentication
 
+### 1. Structure of tests
+The tests are structured in directories as follows:
+- **keywords**: contains <i>.robot</i> files with implementation keywords.
+- **other_files**: contains <i>.json</i> files created to pass the body data in PUT and POST methods.
+- **test-suites**: contains the <i>.robot</i> file with test suites (scenarios or test cases).
+- **.gitignore**: ccontains files to be ignored by git.
+- **requirements.txt**: file containing the calls for installation of the robot framework and the necessary libraries.</br>
+
 ### 1. Pre-conditions for the tests
 - Clone the project
 - Python 2.7.15 installed
