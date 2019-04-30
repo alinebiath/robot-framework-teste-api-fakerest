@@ -3,7 +3,7 @@
 DOCUMENTATION     Praticing concepts: test suite for insert, update
 ...               and delete books using API "FakeRestAPI.Web".
 
-Resource          ../keywords/keywords-faker-api.robot
+Resource          ../keywords/faker-api.robot
 
 Suite Setup       Connect API
 Suite Teardown    Disconnect API
