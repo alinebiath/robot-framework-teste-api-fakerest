@@ -128,10 +128,10 @@ Check if Title of the book is correct
     [Arguments]                                  ${title_expected}
 
     collection.Dictionary Should Contain Item    ${response.json()}
-    ...                                          Title
+    ...                                          title
     ...                                          ${title_expected}
 
-    std.Log                                      ${response.json()["Title"]}
+    std.Log                                      ${response.json()["title"]}
 
 # other way to check key value from json response using builtin's keywords
 Check if PageCount of the book is correct
@@ -140,19 +140,19 @@ Check if PageCount of the book is correct
     ${pagecount_expected_convert}                std.Convert To Integer
     ...                                          ${pagecount_expected}
 
-    std.Should Be Equal As Integers              ${response.json()["PageCount"]}
+    std.Should Be Equal As Integers              ${response.json()["pageCount"]}
     ...                                          ${pagecount_expected_convert}
 
-    std.Log                                      ${response.json()["PageCount"]}
+    std.Log                                      ${response.json()["pageCount"]}
 
 Check if Description of the book is correct
     [Arguments]                                  ${description_expected}
 
     collection.Dictionary Should Contain Item    ${response.json()}
-    ...                                          Description
+    ...                                          description
     ...                                          ${description_expected}
 
-    std.Log                                      ${response.json()["Description"]}
+    std.Log                                      ${response.json()["description"]}
 
 Check if book was removed
     collection.Dictionary Should Contain Item    ${response.headers}
