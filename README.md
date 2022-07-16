@@ -1,52 +1,51 @@
-# Automated tests for "FakeRestAPI.Web" API with Robot Framework
+# Testes automatizados com Robot Framework para API "FakeRestAPI.Web"
 
-- Tests applied to FakeRestAPI.Web, available at: https://fakerestapi.azurewebsites.net/swagger/ui/index#/
-- Performed some basic tests with HTTP methods: GET, POST, PUT and DELETE
-- It isn't necessary to register your application
-- The API doesn't require authentication
+- Testes aplicados na API FakeRestAPI, disponível em: https://fakerestapi.azurewebsites.net/index.html
+- Alguns testes básicos para os seguintes métodos HTTP: GET, POST, PUT and DELETE
+- A API não requer autentiação
 
-### 1. Files and directories structure
-The tests are structured in directories as follows:
+### 1. Estrutura de arquivos e diretórios
+Os testes estão estruturados nos seguintes diretórios:
 
-- **keywords**: contains <i>.robot</i> files with implementation keywords.
-- **other_files**: contains <i>.json</i> files created to pass the body data in PUT and POST methods.
-- **test-suites**: contains the <i>.robot</i> file with test suites (scenarios or test cases).
-- **requirements.txt**: file containing the calls for installation of the robot framework and the necessary libraries.</br>
+- **keywords**: diretório que contém arquivos <i>.robot</i> com a implementação das palavras-chaves (keywords).
+- **other_files**: diretório que contém arquivos <i>.json</i> criados para passar os dados do body nos testes com PUT e POST.
+- **test-suites**: diretório que contém arquivos .robot com as suítes de testes (cenários ou casos de testes).
+- **requirements.txt**: arquivo que contém as chamadas para instalação das libraries do robot que são necessárias para executar os testes.</br>
 
-### 2. Pre-conditions for the tests
-- Clone the project
-- Python 2.7.x
-- Use an ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br>
+### 2. Pré condições para os testes
+- Clonar esse projeto
+- Python 2.7.x ou superior
+- Usar um editor ASCII de sua preferência (VSCode, Atom, RIDE, etc)</br>
 
-### 3. Installing required Python libraries
-Install all required Python libraries typing on terminal command:
+### 3. Instalando libraries Python necessárias
+Instale todas a libraries Python necessárias, digitando no terminal o comando:
 
 ```sh
 Linux / Mac
 $ pip install -r requirements.txt --user
 ```
 
-### 4. Running acceptance tests
+### 4. Executando os testes de aceitação
+> Os comandos abaixo devem ser executados no terminal, no diretório raiz do projeto.
 
-Execute at the terminal the command below:
-- For the consultation scenarios (GET): 
+- Para executar somente os cenários de consulta (GET): 
 ```sh
-$ robot -d output/consults test-suites/consult-data.robot
+$ python -m robot -d output/consults test-suites/consult-data.robot
 ```
-- for data manipulation scenarios (PUT, POST and DELETE):
+- Para executar somente os cenários de manipulação de dados (PUT, POST and DELETE):
 ```sh
-$ robot -d output/manipultation test-suites/manipulation-data.robot
+$ python -m robot -d output/manipultation test-suites/manipulation-data.robot
 ```
-<i>NOTE: For the PUT and POST methods two .JSON files were created to pass the body data, which can be changed as required.</i></br></br>
+<i>NOTE: Para os testes com métodos PUT e POST, foram criados dois arquivos <i>.json</i> para passar os dados do body. Eles podem ser alterados conforme necessidade.</i></br></br>
 
-### 5. Generating additional documentation
+### 5. Gerando documentação adicional
 
-Generating documentation for user keywords:
+Gerando docuentação para as palavras-chaves do usuário (common.robot):
 
 ```sh
 $ python -m robot.libdoc keywords/faker-api.robot doc/faker-api.html
 ```
-Generating documentation for existing test cases:
+Gerando documentação para os casos de testes existentes:
 
 ```sh
 $ python -m robot.testdoc test-suites/ doc/test-suites.html
