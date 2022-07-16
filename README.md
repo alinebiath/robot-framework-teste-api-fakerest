@@ -2,7 +2,7 @@
 
 - Testes aplicados na API FakeRestAPI, disponível em: https://fakerestapi.azurewebsites.net/index.html
 - Alguns testes básicos para os seguintes métodos HTTP: GET, POST, PUT and DELETE
-- A API não requer autentiação
+- A API não requer autenticação
 
 ### 1. Estrutura de arquivos e diretórios
 Os testes estão estruturados nos seguintes diretórios:
