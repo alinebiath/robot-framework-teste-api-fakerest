@@ -17,8 +17,8 @@ Library               OperatingSystem
 
 *** Variables ***
 
-${URL_API}=           https://fakerestapi.azurewebsites.net/api
-${URI}=               Books
+${URL_API}=           https://fakerestapi.azurewebsites.net
+${URI}=               /api/v1/Books
 ${BODY_POST_PATH}=    ./other_files/body-model-post.json
 ${BODY_PUT_PATH}=     ./other_files/body-model-put.json
 &{HEADERS}=           content-type=application/json
